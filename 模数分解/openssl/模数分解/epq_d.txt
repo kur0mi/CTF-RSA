@@ -1,1 +1,0 @@
-d = gmpy2.invert(e, (p-1)*(q-1))

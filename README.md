@@ -4,14 +4,7 @@
 
      - 低加密指数（e=3）
 
-       - wiener（e 太小或太大）
-
-         基于连分数的特殊攻击
-
-         - 加密指数/e很大/rsa-wiener-attack/RSAwienerReallyHack.py
-         - 加密指数/e很大/crack.py（使用 python3 的 owiener 库）
-
-       - CopperSmith部分信息攻击
+       - CopperSmith部分信息攻击（高比特已知分解）
 
          要求已知 p（或 m） 的大部分比特
 
@@ -25,6 +18,13 @@
      - 高加密指数
 
        - 对消息进行多轮加密（从而导致加密指数过高）
+
+       - wiener（e 太大）
+
+         基于连分数的特殊攻击
+
+         - 加密指数/e很大/rsa-wiener-attack/RSAwienerReallyHack.py
+         - 加密指数/e很大/crack.py（使用 python3 的 owiener 库）
 
      - 短填充攻击（short pad attack）
 
@@ -44,7 +44,9 @@
 
        - http://factordb.com/（基于数据库）
 
-       - yafu（p,q 相近或很远）
+       - yafu（p,q 相近或很远）（利用Fermat方法与Pollard rho方法）
+
+         https://www.cnblogs.com/pcat/p/7508205.html
 
        - 公约数分解
 
@@ -85,3 +87,10 @@
 
    import   sys
    sys.setrecursionlimit(10000000)
+
+4. yafu 报错 括号不匹配
+
+   ```
+   yafu-x64 "factor(@)" -batchfile pcat.txt
+   ```
+

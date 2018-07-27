@@ -1,9 +1,14 @@
 # coding=utf-8
 
+"""
+选择相同的模 n 加密相同的信息 m
+
+"""
+
 helpstr = '''
 usage:
-    c1 = m^e1%n
-    c2 = m^e2%n
+    c1 = m ^ e1 % n
+    c2 = m ^ e2 % n
 '''
 
 
