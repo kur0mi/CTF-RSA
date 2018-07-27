@@ -85,12 +85,13 @@
 
 3. 过多的递归爆栈
 
-   import   sys
+   ```
+   import sys
    sys.setrecursionlimit(10000000)
+   ```
 
 4. yafu 报错 括号不匹配
 
    ```
    yafu-x64 "factor(@)" -batchfile pcat.txt
    ```
-
