@@ -8,7 +8,7 @@ import time
 Setting debug to true will display more informations
 about the lattice, the bounds, the vectors...
 """
-debug = True
+debug = False
 
 """
 Setting strict to true will stop the algorithm (and

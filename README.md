@@ -77,6 +77,10 @@
 
    - https://err0rzz.github.io/2017/11/16/sage%E5%AE%89%E8%A3%85/
 
+   在线运行 sage 代码
+
+   - https://sagecell.sagemath.org/
+
 3. 过多的递归爆栈
 
    import   sys
